@@ -1,4 +1,4 @@
-# 표지 지시문 — 특강 ① · 평소와 다른 한 건 찾기 (이상 탐지)
+# 표지 지시문 — 평소와 다른 한 건 찾기 (이상 탐지 연구실)
 
 | 항목 | 내용 |
 |---|---|
@@ -7,7 +7,7 @@
 | 주제 은유 | 수백 개의 초록 점 사이에서 홀로 떨어진 붉은 점 하나, 가지를 뻗은 빛의 나무 모형(고립 숲), 방을 가로지르는 호박색 레이저 선(문턱값) |
 | 네 캐릭터 포즈 | 박사: at the back center pointing up at the horizontal amber laser line / 조수: kneeling and counting green dots on a clipboard / 초파리 연구원: on the left facing right, peering at the lone red dot through a big magnifying glass / 주판봇: on the right facing left, holding up a small glowing tree model in one arm and an abacus in the other |
 | 대체 글 (alt) | 네 캐릭터가 밤의 연구실에서 수많은 초록 점 사이에 홀로 붉게 빛나는 점 하나를 돋보기와 주판으로 살피는 표지 |
-| 앞 표지와 다른 점 | 14주차(구슬 무리·말풍선·신경망 탑), 7주차(성적표) 와 겹치지 않게 점의 들판·빛의 나무·레이저 선으로 함 |
+| 다른 표지와 다른 점 | 점의 들판·빛의 나무·레이저 선으로 이 페이지만의 장면을 만듦 |
 | 결과 암시 | 없음 (대결 전 장면) · 이 페이지 대결 결과: R(주판봇 승, 경보 15건 중 진짜 이상: 고립 숲 8건 대 Z 점수 3건) — 표지에는 드러내지 않음 |
 
 **참고 이미지 (함께 올리기):** 네 캐릭터 기본 그림 4장 (기준: GitHub `adminmrobo/fruitfly-lab-expressions`).
@@ -40,4 +40,4 @@ No text, no letters, no numbers, no logos, no weapons, no cigarettes, no alcohol
 
 **고칠 때 (같은 대화에서):** `Same four characters, same art style and composition. Change only: {고칠 점}. Still no text.`
 
-**받은 뒤:** 그림을 돌려주면 SKILL 18-15 절차(비율·글자·네 캐릭터 확인 → WebP 1600×900·960×540 → 390·768·1280 폭 점검)로 `cover_wS1` 자리에 넣습니다(`tools/art/cover_wS1.webp`로 두고 `python3 build.py S1`). 페이지는 그림이 없어도 대체 표지(CSS + 캐릭터 넷)로 완성 상태입니다.
+**받은 뒤:** 그림 파일을 주시면 비율·글자·네 캐릭터를 확인하고 WebP(1600×900, 960×540)로 바꿔 `index.html`과 6개 언어판의 표지 자리(`cover_wS1`)에 넣습니다. 그림이 없어도 페이지는 대체 표지(CSS + 캐릭터 넷)로 완성 상태입니다.

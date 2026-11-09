@@ -1,6 +1,6 @@
 # 평소와 다른 한 건 찾기 — 이상 탐지의 다섯 도구
 
-**비즈니스를 위한 데이터 과학 연구실 · 특강 ①**
+**이상 탐지 연구실 · 다섯 도구**
 글 · 안상선 ((주)M-Robo 대표)
 
 수만 건의 결제·전표·센서 기록 가운데 사람이 먼저 봐야 할 "이상한 몇 건"을 어떻게 고를까? 박사·조수(하루)·초파리 연구원·주판봇이 진행하는 연구실 해설 페이지에서, 이상 탐지의 다섯 도구를 브라우저에서 직접 돌려 봅니다. 설치할 것은 없고, HTML 파일 하나를 열면 됩니다.
@@ -9,15 +9,15 @@
 
 | 언어 | 파일 |
 |---|---|
-| 한국어 (원본) | [special01_anomaly_detection.html](special01_anomaly_detection.html) |
-| English | [special01_anomaly_detection.en.html](special01_anomaly_detection.en.html) |
-| 中文 | [special01_anomaly_detection.zh.html](special01_anomaly_detection.zh.html) |
-| 日本語 | [special01_anomaly_detection.ja.html](special01_anomaly_detection.ja.html) |
-| Русский | [special01_anomaly_detection.ru.html](special01_anomaly_detection.ru.html) |
-| Oʻzbekcha | [special01_anomaly_detection.uz.html](special01_anomaly_detection.uz.html) |
-| Tiếng Việt | [special01_anomaly_detection.vi.html](special01_anomaly_detection.vi.html) |
+| 한국어 (원본) | [index.html](index.html) |
+| English | [index.en.html](index.en.html) |
+| 中文 | [index.zh.html](index.zh.html) |
+| 日本語 | [index.ja.html](index.ja.html) |
+| Русский | [index.ru.html](index.ru.html) |
+| Oʻzbekcha | [index.uz.html](index.uz.html) |
+| Tiếng Việt | [index.vi.html](index.vi.html) |
 
-`index.html`은 한국어 페이지로 이동합니다. 페이지 위쪽의 언어 단추로 언제든 바꿀 수 있습니다. 외국어판은 원어민 검수를 거치지 않았습니다.
+페이지 위쪽의 언어 단추로 언제든 바꿀 수 있습니다. 외국어판은 원어민 검수를 거치지 않았습니다.
 
 ## 다섯 칸
 
@@ -45,20 +45,20 @@
 - scikit-learn `IsolationForest` 문서 (2026-11-10 확인)
 - 함께 읽기: 안상선 (2024). 금융 분야의 이상탐지 모델 보안을 위한 통계 기반의 적대적 데이터 대응 방안. *미래사회*, 15(3), 147–166. doi:10.22987/jifso.2024.15.3.147 · [연구실 해설](https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/01_adversarial_finance.html)
 
-## 함께 보기
+## 함께 읽기
 
-이 특강은 강의 해설 시리즈 [비즈니스를 위한 데이터 과학 연구실](https://adminmrobo.github.io/data_science_for_business/)의 한 편입니다. 3주차(이상값 다루기), 7주차(정밀도·재현율), 14주차와 함께 보면 좋습니다. 페이지를 만드는 원본(`tools/pages/wS1.*`)과 빌드 도구는 그 저장소에 있습니다.
+[적대적 데이터와 금융 이상 탐지 (연구실 해설)](https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/01_adversarial_finance.html) — 탐지 모델을 속이도록 꾸민 데이터와 통계 검정으로 걸러 내는 방법.
 
 ## 그림
 
-표지·장면 그림 3장은 아직 없어 페이지가 대체 표지로 보입니다. 이미지 생성 지시서는 [`docs/COVER_S1.md`](docs/COVER_S1.md)(표지)와 [`docs/IMG_S1.md`](docs/IMG_S1.md)(히어로·아웃트로 장면)에 있습니다.
+표지·장면 그림 3장은 아직 없어 페이지가 대체 표지로 보입니다. 이미지 생성 지시서는 [`docs/COVER.md`](docs/COVER.md)(표지)와 [`docs/IMG.md`](docs/IMG.md)(히어로·아웃트로 장면)에 있습니다.
 
 ## 파일
 
 ```
-index.html                              한국어 페이지로 이동
-special01_anomaly_detection.html        한국어 원본
-special01_anomaly_detection.{en,zh,ja,ru,uz,vi}.html   외국어판
-docs/COVER_S1.md                        표지 그림 지시서
-docs/IMG_S1.md                          이미지 제작 명세서
+index.html                       한국어 원본
+index.{en,zh,ja,ru,uz,vi}.html   외국어판
+img/og.jpg                       공유 미리보기 그림 (첫 화면 캡처, 임시)
+docs/COVER.md                    표지 그림 지시서
+docs/IMG.md                      이미지 제작 명세서
 ```

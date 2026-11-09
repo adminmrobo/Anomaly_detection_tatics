@@ -1,8 +1,8 @@
-# 특강 ① · 평소와 다른 한 건 찾기 — 이미지 제작 명세서
+# 평소와 다른 한 건 찾기 — 이미지 제작 명세서 (이상 탐지 연구실)
 
 | 항목 | 내용 |
 |---|---|
-| 페이지 | special01_anomaly_detection.html |
+| 페이지 | index.html (+ .en .zh .ja .ru .uz .vi) |
 | 모드 / 주 앵커 | 교과서 모드(인포그래픽 해설) / D 생활·현장: 점의 들판 |
 | 시즌 | 기본 |
 | 대결 | R(주판봇 승, 경보 15건 중 진짜 이상: 고립 숲 8건 대 칸별 Z 점수 3건) |
@@ -20,18 +20,18 @@
 
 | # | 키 | 판 | 크기 | 상태 | 우선 | 들어가는 곳 | 대신 쓰는 그림 |
 |---|---|---|---|---|---|---|---|
-| 1 | cover_wS1 | L | 1920×1080 | 새로 (COVER_S1) | P1 | 맨 위 글 표지 | 대체 표지(CSS + 캐릭터 넷) |
+| 1 | cover_wS1 | L | 1920×1080 | 새로 (docs/COVER.md) | P1 | 맨 위 글 표지 | 대체 표지(CSS + 캐릭터 넷) |
 | 2 | sc_wS1_hero | E | 1200×800 | 새로 | P1 | 히어로 무대 | 캔버스 무대 + 캐릭터 그림 |
 | 3 | sc_wS1_outro | E | 1200×800 | 새로 | P2 | 아웃트로 | 없음(장면 생략) |
-| 4 | thumb_wS1 | I | 600×400 | 새로 (표지 3:2 자르기) | P2 | 목차 특강 카드 | 이모지 카드 |
-| 5 | og_wS1 | K | 1200×630 | 새로 (표지 자르기) | P3 | 공유 미리보기 | og_index.jpg |
+| 4 | thumb_wS1 | I | 600×400 | 새로 (표지 3:2 자르기) | P3 | 소개용 썸네일 | 없음 |
+| 5 | og_wS1 | K | 1200×630 | 새로 (표지 자르기) | P3 | 공유 미리보기 | img/og.jpg (첫 화면 캡처, 임시) |
 | 6 | 표정 키 전부 | A~D | 96px | 재사용 (캐릭터 팩 @5269662) | — | 말풍선·대결·등장인물 | 픽셀 지도 |
 | 7 | 실험 그림 | — | — | 코드 | — | 캔버스 | — |
 
 ## 3. 새로 그릴 그림 상세
 
 ### 3-1. `cover_wS1` — 글 표지
-`COVER_S1.md`를 그대로 씁니다.
+`docs/COVER.md`를 그대로 씁니다.
 
 ### 3-2. `sc_wS1_hero` — 히어로 무대 (결과 암시 없음)
 대체 글: 네 캐릭터가 초록 점의 들판 한가운데서 홀로 떨어진 붉은 점을 바라보는 연구실 장면
@@ -52,16 +52,16 @@
 
 ## 5. 넘겨받은 뒤 처리
 1. 크기 확인 → WebP 압축(표지 1600 220 KB 이하)
-2. `tools/art/`에 `cover_wS1.webp`, `sc_wS1_hero.webp`, `sc_wS1_outro.webp`로 두고 `python3 build.py S1` → `data-scene`·`data-img` 자리가 자동으로 켜짐
+2. 표지·장면 그림을 페이지의 `cover_wS1`, `sc_wS1_hero`, `sc_wS1_outro` 자리에 넣고 6개 언어판에도 같이 반영
 3. 페이지 그림 합계 표지 포함 600 KB 이하 확인
 
 ## 6. 매니페스트
 ```json
-{"page":"special01_anomaly_detection","anchor":"D:dot-field","season":"default","duel":{"result":"R","gap":5},
+{"page":"index","anchor":"D:dot-field","season":"default","duel":{"result":"R","gap":5},
  "images":[
   {"key":"cover_wS1","plate":"L","size":[1920,1080],"status":"new","priority":"P1","slot":"cover","fallback":"css-pixel-four","alt":"네 캐릭터가 밤의 연구실에서 수많은 초록 점 사이에 홀로 붉게 빛나는 점 하나를 돋보기와 주판으로 살피는 표지"},
   {"key":"sc_wS1_hero","plate":"E","size":[1200,800],"status":"new","priority":"P1","slot":"hero-stage","fallback":"canvas-stage","alt":"네 캐릭터가 초록 점의 들판 한가운데서 홀로 떨어진 붉은 점을 바라보는 연구실 장면"},
   {"key":"sc_wS1_outro","plate":"E","size":[1200,800],"status":"new","priority":"P2","slot":"outro","fallback":"none","alt":"고립 숲 나무 모형 앞에서 두 팔을 든 주판봇, 두 손으로 얼굴을 감싼 초파리 연구원, 점수판을 든 조수와 고개를 끄덕이는 박사"},
-  {"key":"thumb_wS1","plate":"I","size":[600,400],"status":"new","priority":"P2","slot":"index-card","fallback":"emoji-card","alt":""},
-  {"key":"og_wS1","plate":"K","size":[1200,630],"status":"new","priority":"P3","slot":"og","fallback":"og_index.jpg","alt":""}]}
+  {"key":"thumb_wS1","plate":"I","size":[600,400],"status":"new","priority":"P2","slot":"thumbnail","fallback":"none","alt":""},
+  {"key":"og_wS1","plate":"K","size":[1200,630],"status":"new","priority":"P3","slot":"og","fallback":"img/og.jpg","alt":""}]}
 ```
