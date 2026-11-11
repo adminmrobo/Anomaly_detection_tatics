@@ -2,7 +2,7 @@
 
 | 항목 | 내용 |
 |---|---|
-| 키 · 판 | cover_wS1 · L (16:9, 가로 1920 이상) |
+| 키 · 판 | cover_anomaly · L (16:9, 가로 1920 이상) |
 | 장소 (앵커) | D 생활·현장: 밤의 연구실에 펼쳐진 점의 들판 |
 | 주제 은유 | 수백 개의 초록 점 사이에서 홀로 떨어진 붉은 점 하나, 가지를 뻗은 빛의 나무 모형(고립 숲), 방을 가로지르는 호박색 레이저 선(문턱값) |
 | 네 캐릭터 포즈 | 박사: at the back center pointing up at the horizontal amber laser line / 조수: kneeling and counting green dots on a clipboard / 초파리 연구원: on the left facing right, peering at the lone red dot through a big magnifying glass / 주판봇: on the right facing left, holding up a small glowing tree model in one arm and an abacus in the other |
@@ -40,4 +40,4 @@ No text, no letters, no numbers, no logos, no weapons, no cigarettes, no alcohol
 
 **고칠 때 (같은 대화에서):** `Same four characters, same art style and composition. Change only: {고칠 점}. Still no text.`
 
-**받은 뒤:** 그림 파일을 주시면 비율·글자·네 캐릭터를 확인하고 WebP(1600×900, 960×540)로 바꿔 `index.html`과 6개 언어판의 표지 자리(`cover_wS1`)에 넣습니다. 그림이 없어도 페이지는 대체 표지(CSS + 캐릭터 넷)로 완성 상태입니다.
+**받은 뒤:** 그림 파일을 주시면 비율·글자·네 캐릭터를 확인하고 WebP(1600×900, 960×540)로 바꿔 `index.html`과 6개 언어판의 표지 자리(`cover_anomaly`)에 넣습니다. 그림이 없어도 페이지는 대체 표지(CSS + 캐릭터 넷)로 완성 상태입니다.
