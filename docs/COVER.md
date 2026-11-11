@@ -41,3 +41,45 @@ No text, no letters, no numbers, no logos, no weapons, no cigarettes, no alcohol
 **고칠 때 (같은 대화에서):** `Same four characters, same art style and composition. Change only: {고칠 점}. Still no text.`
 
 **받은 뒤:** 그림 파일을 주시면 비율·글자·네 캐릭터를 확인하고 WebP(1600×900, 960×540)로 바꿔 `index.html`과 6개 언어판의 표지 자리(`cover_anomaly`)에 넣습니다. 그림이 없어도 페이지는 대체 표지(CSS + 캐릭터 넷)로 완성 상태입니다.
+
+---
+
+# 썸네일 지시문 — 목차 카드·SNS 작은 그림 (thumb_anomaly)
+
+| 항목 | 내용 |
+|---|---|
+| 키 · 판 | thumb_anomaly · I (3:2, 600×400으로 줄여 씀 — 1536×1024로 생성) |
+| 원칙 | 작게 줄여도 읽히게: 요소는 셋(초록 점 무리 · 붉은 점 하나 · 호박색 선), 캐릭터는 크게 |
+| 캐릭터 | 넷 모두. 표지보다 가까이 붙여 상반신 위주 (인턴·X1~X3은 넣지 않음) |
+| 대체 글 (alt) | 초록 점 무리에서 홀로 떨어진 붉은 점 하나를 돋보기로 들여다보는 초파리 연구원과, 빛의 나무를 든 주판봇, 그 뒤에서 지켜보는 박사와 조수 |
+| 다른 방법 | 표지(cover_anomaly)를 받은 뒤 붉은 점·초파리 연구원·주판봇이 들어가게 3:2로 잘라도 됨 |
+
+**Genspark에 붙여 넣기 ↓**
+```
+목차 카드와 SNS에 쓸 작은 썸네일 그림 1장을 만들어 줘.
+- 비율 3:2 (1536×1024), 600×400으로 줄여도 알아볼 수 있게 단순하고 크게
+- 첨부한 참고 이미지의 네 캐릭터(박사, 조수, 초파리 연구원, 주판봇)를 같은 그림체·같은 외형으로, 넷 모두 등장
+- 그림 안에 글자·숫자·로고를 넣지 말 것
+아래 영어 프롬프트를 그대로 써 줘.
+
+Small thumbnail illustration, 3:2 landscape, must stay readable when shrunk to 600x400.
+Match the art style, proportions and colors of the attached reference images exactly
+  (if there are no reference images: 16-bit RPG style pixel art, bold dark outline, 2–3 tone shading, small highlights).
+Night laboratory, deep purple background, simple and uncluttered, high contrast.
+Only three visual elements besides the characters:
+  a loose cluster of glowing green dots on the left half,
+  ONE large red-glowing dot clearly apart from the cluster, near the center-right, the brightest thing in the picture,
+  one horizontal amber laser line across the upper third.
+Characters, large and close to the viewer (waist-up framing for the front two):
+  front left: anthropomorphic fruit fly researcher, black body, big red compound eyes, blue helmet with a gold stripe and pink and blue cables, white lab coat over a black vest, black gloves, transparent wings, facing right, holding a big magnifying glass up to the lone red dot, surprised;
+  front right: boxy beige retro CRT-monitor robot, dark green screen face with mint pixel eyes and mouth, short antenna topped with a red-brown abacus bead, gray segmented arms, facing left, holding up a small glowing tree model made of branching lines, confident;
+  behind them, smaller: chibi scientist, thin teal rectangular glasses, spiky black hair with one white streak, small ponytail, white lab coat over black vest and tie, pointing at the amber line;
+  girl researcher, long pink hair with two round buns and a navy streak, blue eyes, white lab coat over lavender hoodie, holding a clipboard, curious.
+Composition: the red dot sits between the magnifying glass and the tree model; all faces inside the central area (8% margin on every side); no tiny details.
+Mood: curious, friendly rivalry.
+No text, no letters, no numbers, no logos, no weapons, no blood, no real brands.
+```
+
+**고칠 때:** `Same four characters, same style and 3:2 framing. Change only: {고칠 점}. Still no text.`
+
+**받은 뒤:** 600×400 WebP(`img/thumb_anomaly.webp`)로 줄여 넣고, `cover_manifest.json`에 `thumb_anomaly` 항목을 더합니다.
