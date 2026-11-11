@@ -1,0 +1,70 @@
+{
+  "series_ko": "이상 탐지 연구실",
+  "title_ko": "평소와 다른 한 건 찾기 — 이상 탐지의 다섯 도구",
+  "site_title": "평소와 다른 한 건 찾기 — 이상 탐지의 다섯 도구",
+  "site_url": "https://adminmrobo.github.io/Anomaly_detection_tatics/",
+  "ontology": {
+    "pages": [
+      {
+        "path": "index.html",
+        "kg": true,
+        "export": true
+      }
+    ],
+    "files": []
+  },
+  "i18n": {
+    "langs": [
+      "ko",
+      "en",
+      "zh",
+      "ja",
+      "uz",
+      "ru",
+      "vi"
+    ],
+    "pages": {
+      "ko": 1,
+      "en": 1,
+      "zh": 1,
+      "ja": 1,
+      "uz": 1,
+      "ru": 1,
+      "vi": 1
+    },
+    "readme_langs": [
+      "ko"
+    ]
+  },
+  "languages": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+  ],
+  "items": [
+    {
+      "id": "og",
+      "role": "og",
+      "path": "img/og.jpg",
+      "size": [
+        1200,
+        630
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": null,
+      "source_of": null,
+      "status": "ok"
+    }
+  ],
+  "updated": "2026-11-11"
+}

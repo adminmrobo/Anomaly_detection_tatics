@@ -35,6 +35,10 @@
 
 모든 실험 데이터는 개념을 보여 주려고 만든 예시이며 실제 회사·카드사의 데이터가 아닙니다.
 
+## 만든 방법
+
+연구실 해설 스킬 ai-lab-explainer 1.12(캐릭터 팩 1.4, fruitfly-lab-expressions @ 86d04ac)로 만들었습니다. 외국어판은 언어팩으로 옮겼습니다.
+
 ## 출처
 
 - 「Anomaly Detection Mathematics」 인포그래픽 (작성자 미상, 소셜미디어 게시물) — 페이지의 뼈대
@@ -61,4 +65,5 @@ index.{en,zh,ja,ru,uz,vi}.html   외국어판
 img/og.jpg                       공유 미리보기 그림 (첫 화면 캡처, 임시)
 docs/COVER.md                    표지 그림 지시서
 docs/IMG.md                      이미지 제작 명세서
+cover_manifest.json              표지·그림·온톨로지·번역 현황 (ahnboat lab 이미지 표지 현황판용)
 ```
